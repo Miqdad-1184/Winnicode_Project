@@ -1,0 +1,17 @@
+@import url(root.css);
+
+.loginPage{
+    display: flex;
+}
+
+.loginPage aside{
+    flex: 1;
+    margin-left: 0;
+}
+
+.loginFormContainer{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

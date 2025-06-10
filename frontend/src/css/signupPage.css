@@ -1,0 +1,12 @@
+@import url(root.css);
+
+.signupPage{
+    display : flex;
+}
+
+.signupFormContainer{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

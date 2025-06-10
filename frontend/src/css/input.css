@@ -1,0 +1,96 @@
+/*Search styles*/
+.search{
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+
+.searchInput {
+  border: none;
+  padding: 5px;
+  border-radius: 20px;
+  width: 200px;
+  font-family: var(--font-secondary);
+}
+
+button {
+  color: black;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* CommentInput styles */
+.commentContainer {
+  background: #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.commentContainer label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.commentContainer textarea {
+  width: 97%;
+  height: 100px;
+  padding: 10px;
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  font-family: sans-serif;
+}
+
+.commentFooter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  align-items: center;
+}
+
+.commentFooter span {
+  font-size: 14px;
+  color: #555;
+}
+
+.commentFooter button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Sort By styles */
+.Terbaru {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  background-color: aqua;
+}
+
+/* Input Text Style */
+.inputText{
+  display: flex;
+  flex-flow: column;
+}
+
+.inputText input{
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #adadad;
+  margin-bottom: 10px;
+}
+
+input:focus{
+  outline: none;
+}

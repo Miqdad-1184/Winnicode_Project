@@ -1,0 +1,253 @@
+@import url(root.css);
+
+/*Populer news card style*/
+.populerNewsCard {
+  display: flex;
+  max-width: 1200px;
+  margin: 1rem auto;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  max-height: 400px;
+  flex: 2;
+}
+
+.newsImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.overlay h3{
+  font-family: var(--font-primary);
+}
+
+.populerNewsCard aside{
+  margin-left: 20px;
+  flex: 1;
+  font-family: var(--font-secondary);
+}
+
+/* news new card style */
+.card {
+  width: 190px;
+  background: white;
+  padding: .4em;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 130px;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-image:hover {
+  transform: scale(0.98);
+}
+
+.heading {
+  font-weight: 600;
+  color: black;
+  padding: 7px;
+  font-family: var(--font-primary);
+}
+
+.heading:hover {
+  cursor: pointer;
+}
+
+.author {
+  color: gray;
+  font-weight: 400;
+  font-size: 11px;
+  padding-top: 20px;
+  font-family: var(--font-secondary);
+}
+
+.name {
+  font-weight: 600;
+}
+
+.name:hover {
+  cursor: pointer;
+}
+
+/* news card aside style */
+.newsCardAside {
+  width: 300px;
+  background: white;
+  padding: .4em;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.newsCardAside:hover{
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.newsAsideImage {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 100px;
+  border-radius: 6px;
+  flex: 1;
+}
+
+.newsAsideImage:hover {
+  transform: scale(0.98);
+}
+
+.newsCardAside .heading {
+  font-weight: 600;
+  color: black;
+  padding: 7px;
+  font-family: var(--font-primary);
+  flex: 1;
+}
+
+.newsCardAside .heading:hover {
+  cursor: pointer;
+}
+
+.newsCardAside .author {
+  color: gray;
+  font-weight: 400;
+  font-size: 11px;
+  font-family: var(--font-secondary);
+  margin-top: 33px;
+}
+
+.newsCardAside .name {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.newsCardAside .name:hover {
+  cursor: pointer;
+}
+
+/* news card search style */
+.newsCardSearch {
+  max-width: 100%;
+  background: white;
+  height: 200px;
+  padding: .4em;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.newsCardSearch:hover{
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.newsSearchImage {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  max-height: 100%;
+  border-radius: 6px;
+  flex: 1;
+}
+
+.newsSearchImage:hover {
+  transform: scale(0.98);
+}
+
+.newsCardSearch .heading {
+  font-weight: 600;
+  color: black;
+  padding: 7px;
+  font-family: var(--font-primary);
+  flex: 2;
+}
+
+.newsCardSearch p{
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  color: black;
+  font-weight: normal;
+}
+
+.newsCardSearch .heading:hover {
+  cursor: pointer;
+}
+
+.newsCardSearch .author {
+  color: gray;
+  font-weight: 400;
+  font-size: 11px;
+  font-family: var(--font-secondary);
+  margin-top: 80px;
+}
+
+.newsCardSearch .name {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.newsCardSearch .name:hover {
+  cursor: pointer;
+}
+
+/*dasborad card style*/
+.dashboardCard{
+  width: 150px;
+  height: 100px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.dashboardCard:hover{
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dashboardCard .labelCard{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.labelCard h1{
+  margin-top: 0;
+}

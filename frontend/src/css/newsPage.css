@@ -1,0 +1,20 @@
+@import url(root.css);
+
+.newsPageContainer {
+  display: flex;
+}
+
+.newsContentContainer {
+  flex: 3;
+  padding: 20px;
+}
+
+.newsPageContainer aside {
+  flex: 1;
+  padding: 20px;
+  border-left: 1px solid var(--color-primary);
+}
+
+.newsCommentContainer {
+  margin-top: 20px;
+}

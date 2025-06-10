@@ -1,0 +1,44 @@
+.loginForm, .signupForm{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.loginForm h1{
+    text-align: center;
+}
+
+.loginForm .passwordLabel{
+  display: flex;
+  justify-content: space-between;
+}
+
+.googleButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    width: 80%;
+    color: black;
+    margin-top: 20px;
+    border: 1px solid #adadad;
+}
+
+.linkTo{
+    display: flex;
+}
+
+.loginButton{
+  background-color: #3A5B22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  width: 80%;
+  color: white;
+  margin-top: 20px;
+  border: 1px solid #adadad;
+}
