@@ -18,3 +18,48 @@
 .newsCommentContainer {
   margin-top: 20px;
 }
+
+@media (max-width: 768px){
+
+  .newsContentContainer{
+    padding: 0;
+  }
+
+  .newsPageContainer{
+    flex-direction: column;
+  }
+
+  .newsPageContainer aside {
+    border-left: none;
+    padding: 10px;
+  }
+
+  .newsPageContainer aside h1 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .asideScroll {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+  }
+
+  .asideScroll > * {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    min-width: 250px;
+  }
+
+  .asideScroll::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .asideScroll::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+}

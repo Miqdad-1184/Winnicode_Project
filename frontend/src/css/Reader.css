@@ -1,0 +1,93 @@
+@import url('root.css');
+
+.readerContainer{
+    display: flex;
+}
+
+.readerContainer aside{
+    flex: 1;
+    position: fixed;
+}
+
+.reader{
+    flex: 3;
+    padding: 0 60px 60px 60px;
+    margin-left: 300px;
+}
+
+.cardSaveContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cardSave{
+    width: 190px;
+}
+
+@media (max-width: 768px){
+  .burgerButton {
+    display: block;
+  }
+
+  .readerContainer {
+    flex-direction: column;
+  }
+
+  .readerContainer aside {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--color-primary);
+    z-index: 1000;
+    transition: left 0.3s ease;
+    padding: 20px;
+  }
+
+  .readerContainer aside.show {
+    left: 0;
+  }
+
+  .reader{
+    width: 100%;
+    padding: 50px 10px 10px 10px;
+    margin-left: 0;
+  }
+
+  .closeSidebar {
+    display: block;
+  }
+
+  .profileForm {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .formRow {
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+  }
+
+  .inputText {
+    width: 100%;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .editBtn,
+  .saveBtn,
+  .deleteButton {
+    width: 100%;
+  }
+
+  .admin .label button{
+    width: 150px;
+    margin-right: 20px;
+  }
+}

@@ -2,6 +2,11 @@
 
 .signupPage{
     display : flex;
+    background-color: white;
+}
+
+.signupPage aside{
+    flex: 1;
 }
 
 .signupFormContainer{
@@ -9,4 +14,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+  .signupPage {
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .signupPage aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .signupFormContainer {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
 }

@@ -1,0 +1,70 @@
+@import url(root.css);
+
+.forgotPassword{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.forgotForm{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: inset;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),
+    0 2px 4px -2px rgba(0,0,0,.1);
+}
+
+.forgotLabel{
+    background-color: #3A5B22;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.forgotLabel h2{
+    text-align: center;
+    color: white;
+}
+
+.descriptionLabel{
+    text-align: center;
+    font-size: 15px;
+    width: 300px;
+    color: #9e9e9e;
+}
+
+.linkTo{
+    display: flex;
+}
+
+.sendButton{
+  background-color: #3A5B22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  width: 80%;
+  color: white;
+  margin-top: 20px;
+  border: 1px solid #adadad;
+}
+
+.forgotForm p{
+    margin-top: 0;
+}
+
+.inputContainer{
+    margin-top: 10px;
+}
+
+.forgotForm span{
+    font-size: 50px;
+    color: #3A5B22;
+}

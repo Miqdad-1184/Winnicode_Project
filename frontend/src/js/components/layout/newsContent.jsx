@@ -10,7 +10,7 @@ export default function NewsContent({ category, title, author, date, image, capt
             <p>{date}</p>
         </div>
         <img src={image} alt={title} className="newsImage" />
-        <p className="imageCaption">{caption}</p>
+        <figcaption className="imageCaption">{caption}</figcaption>
         <div className="newsBody">
             {content}
         </div>

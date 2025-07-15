@@ -7,7 +7,7 @@ export default function ProfilePic({ photo }) {
       {photo ? (
         <img src={photo} alt="profile" />
       ) : (
-        <FaUserCircle size="10em" color="white" />
+        <FaUserCircle color="white" />
       )}
     </div>
   );

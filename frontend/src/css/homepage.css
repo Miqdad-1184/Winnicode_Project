@@ -2,30 +2,46 @@
 
 .populerNewsContainer {
   border-bottom: 1px solid black;
-  margin: 30px;
 }
 
 .populerNewsContainer h1 {
   font-family: var(--font-primary);
-  font-size: 25px;
-  margin-left: 40px;
 }
 
-.homepage h1{
-  margin-left: 50px;
+.homepage main{
+  padding: 50px 100px;
 }
-
 
 .newsNewContainer {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  margin: 0px 50px 50px 50px;
-  border-bottom: 1px solid black;
   padding-bottom: 0px;
 }
 
 .newsNewContainer > * {
-  flex: 1 1 calc(20% - 20px);
-  box-sizing: border-box;
+  width: 190px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px){
+  .homepage{
+    max-width: 768px;
+  }
+  .homepage main{
+    padding: 15px;
+  }
+
+  .homepage h1{
+    font-size: 15px;
+  }
+  .newsNewContainer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .newsNewContainer > *{
+    width: 140px;
+    height: 200px;
+  }
 }

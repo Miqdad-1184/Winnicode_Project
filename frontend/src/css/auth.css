@@ -14,16 +14,26 @@
   justify-content: space-between;
 }
 
+.email, .password, .name{
+    width: 250px;
+    margin-left: 0;
+}
+
 .googleButton{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     border-radius: 8px;
-    width: 80%;
+    width: 100%;
     color: black;
     margin-top: 20px;
     border: 1px solid #adadad;
+}
+
+.googleButton svg{
+  height: 20px;
+  margin-right: 5px;
 }
 
 .linkTo{
@@ -41,4 +51,20 @@
   color: white;
   margin-top: 20px;
   border: 1px solid #adadad;
+}
+
+@media (max-width: 768px){
+  .loginForm, .signupForm {
+    background-color: white;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  }
+
+  .email, .password, .name{
+    width: 250px;
+    margin-left: 0;
+  }
 }

@@ -8,38 +8,103 @@
   padding: 3px;
   background-color: var(--color-primary);
   border-bottom: 1px solid #FFFFFF;
-  width: 100dvw;
 }
 
-img{
-    width: 120px;
+.header .search {
+  width: 300px;
 }
 
-.headerRight{
+img.headerLogo {
+  width: 120px;
+}
+
+.headerRight {
   display: flex;
   margin-right: 20px;
 }
 
+.burgerButtonHome {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+  color: white;
+}
+
+.mobileMenu {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background-color: var(--color-primary);
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .desktopOnly {
+    display: none !important;
+  }
+
+  .mobileOnly {
+    display: block !important;
+  }
+
+  .mobileButton{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .header {
+    padding: 10px;
+  }
+
+  .header .search {
+    width: 100%;
+  }
+
+  .burgerButton {
+    display: block;
+  }
+}
+
 /*Navbar Styles*/
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: var(--color-primary);
   color: #fff;
-  justify-content: center;
-  position: fixed;
-  width:100%;
   position: sticky;
   top: 0;
   z-index: 999;
+  overflow: hidden;
+}
+
+.navbar-scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  padding: 10px 0;
+  margin: 0 auto;
+  width: max-content;
+  justify-content: center;
 }
 
 .navbar li {
   margin: 0 15px;
   list-style-type: none;
-  display: inline;
   font-family: var(--font-primary);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.navbar-scroll::-webkit-scrollbar {
+  display: none;
 }
 
 /* Footer Styles */
@@ -105,6 +170,13 @@ img{
   border-bottom: 1px solid black;
 }
 
+@media (max-width: 768px){
+  .footerContent{
+    flex-direction: column;
+  }
+}
+
+
 /* news Content styles */
 .newsContent {
   display: flex;
@@ -156,6 +228,25 @@ img{
   line-height: 1.6;
   margin-top: 20px;
   text-align: justify;
+}
+
+@media (max-width: 768px){
+  .newsImage{
+    max-height: 300px;
+    max-width: 400px;
+  }
+
+  .newsContent h1{
+    font-size: 15px;
+  }
+
+  .imageCaption{
+    max-width: 400px;
+  }
+
+  .newsBody{
+    max-width: 400px;
+  }
 }
 
 /* CommentList styles */
@@ -242,6 +333,7 @@ img{
 .navbarAdmin{
   background-color: var(--color-primary);
   height: 100dvh;
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -281,4 +373,49 @@ img{
   background-color: #fff;
   color: black;
   box-sizing: border-box;
+}
+
+/* header table style */
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table-header p {
+  font-weight: 600;
+  color: #333;
+}
+
+.table-header .button-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.table-header .add-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.table-header .delete-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.table-header .add-btn:hover {
+  background-color: #218838;
+}
+
+.table-header .delete-btn:hover {
+  background-color: #c82333;
 }

@@ -1,17 +1,14 @@
 import '../../../css/card.css'
+import { FaBookmark, FaShareAlt } from 'react-icons/fa';
 
-const NewsCardHome = ({ title, image, time, author }) => {
+const NewsCardHome = ({ category,title, image, time, author }) => {
   return (
       <div className="card">
-        <div
-          className="card-image"
-          style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-        />
+        <div className="card-image" style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
+        <label className="category"> {category} </label>
         <div className="heading">
           {title}
-          <div className="author">
-            {time} <span>|</span> <span className="name">{author}</span>
-          </div>
+          <div className="author"><p className="name">{author}</p> <span>|</span> <p>{time}</p></div>
         </div>
       </div>
   );

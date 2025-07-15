@@ -1,8 +1,7 @@
-import '../../../css/layout.css'
-
 export default function Navbar({ author }) {
   return (
-      <nav className="navbar">
+    <nav className="navbar">
+      <div className="navbar-scroll">
         <ul>
           <li>Sejarah</li>
           <li>Berita</li>
@@ -10,6 +9,7 @@ export default function Navbar({ author }) {
           <li>Politik</li>
           <li>Rekreasi</li>
         </ul>
-      </nav>
+      </div>
+    </nav>
   );
 }
