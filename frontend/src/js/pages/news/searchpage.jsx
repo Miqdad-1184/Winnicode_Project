@@ -5,7 +5,7 @@ import Navbar from '../../components/layout/navbar';
 import Footer from '../../components/layout/footer';
 import NewsCardSearch from '../../components/card/newsCardSearch.';
 import Image from '../../../assets/populer.jpg';
-import SortBy from '../../components/input/sortBy';
+import SortBy from '../../components/input/SortBy';
 import SortTime from '../../components/input/sortTime';
 import ButtonFlex from '../../components/button/buttonFlex';
 
